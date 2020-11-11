@@ -15,4 +15,5 @@ FROM grades g
         FROM students
 	) AS s
     ON g.grade_studentid = s.student_id
-GROUP BY p.professors_name, s.student_name;
+GROUP BY p.professors_name, s.student_name
+ORDER BY Professor, Student;
